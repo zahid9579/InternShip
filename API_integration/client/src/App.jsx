@@ -14,7 +14,7 @@ const App = () => {
         const response = await axios.get('/api/products');
         console.log(response.data)
         setProducts(response.data)
-        setLoding(false)
+        setLoding(false)  
       }
       catch(error){
         setError(true)
